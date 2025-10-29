@@ -71,3 +71,17 @@ cd delta-shell
 ::: tip
 So for starting you need use `run-dev.sh` script
 :::
+
+## Running Delta Shell
+
+Once you have installed Delta Shell, you can run it by running the following command:
+
+```bash
+delta-shell run
+```
+
+Also more information you can get with
+
+```bash
+delta-shell -h
+```
