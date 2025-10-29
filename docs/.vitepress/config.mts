@@ -3,7 +3,7 @@ import { defineConfig } from "vitepress";
 export default defineConfig({
   title: "Delta Shell",
   description: "A desktop shell based on Ags",
-  base: "/wiki/",
+  base: "/delta-shell-docs/",
   lastUpdated: true,
   themeConfig: {
     outline: "deep",
