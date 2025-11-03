@@ -21,7 +21,7 @@ _Subcategory `bar:modules:`_
 | `center` | modules at center of the bar | `string[]` | `["clock"]`                                                |
 | `end`    | modules at end of the bar    | `string[]` | `["recordindicator", "tray", "keyboard", "quicksettings"]` |
 
-Available modules: `launcher`, `workspaces`, `clock`, `tray`, `keyboard`, `recordindicator`, `weather`, `notificationslist`, `volume`, `network`, `bluetooth`, `battery`, `quicksettings`, `clipboard`, `powermenu`
+Available modules: `launcher`, `workspaces`, `clock`, `tray`, `keyboard`, `recordindicator`, `weather`, `notificationslist`, `volume`, `network`, `bluetooth`, `battery`, `quicksettings`, `clipboard`, `powermenu`, `separator`, `cpu`, `ram`
 
 ## Launcher
 
@@ -71,9 +71,14 @@ _Subcategory `bar:modules:`_
 
 ### Format replacements:
 
-| String   | Replacement                 |
-| -------- | --------------------------- |
-| `{icon}` | icon, setted by delta shell |
+| String                 | Replacement                         |
+| ---------------------- | ----------------------------------- |
+| `{icon}`               | icon, setted by delta shell         |
+| `{status}`             | Status of the bluetooth device      |
+| `{controller-address}` | Address of the displayed controller |
+| `{controller-alias}`   | Alias of the displayed controller   |
+| `{device-address}`     | Address of the displayed device     |
+| `{device-alias}`       | Alias of the displayed device       |
 
 ## Clipboard
 
@@ -145,9 +150,13 @@ _Subcategory `bar:modules:`_
 
 ### Format replacements:
 
-| String   | Replacement                 |
-| -------- | --------------------------- |
-| `{icon}` | icon, setted by delta shell |
+| String        | Replacement                              |
+| ------------- | ---------------------------------------- |
+| `{icon}`      | icon, setted by delta shell              |
+| `{ifname}`    | Name of the network interface            |
+| `{essid}`     | Name (SSID) of the wireless network      |
+| `{strength}`  | Signal strength of the wireless network  |
+| `{frequency}` | Frequency of the wireless network in GHz |
 
 ## Volume
 
@@ -257,3 +266,34 @@ _Subcategory `bar:modules:`_
 | String   | Replacement                 |
 | -------- | --------------------------- |
 | `{icon}` | icon, setted by delta shell |
+
+## Cpu
+
+_Subcategory `bar:modules:`_
+
+| Property | Description                                     | Type     | Default          |
+| -------- | ----------------------------------------------- | -------- | ---------------- |
+| `format` | The format, how information should be displayed | `string` | `{icon} {usage}` |
+
+### Format replacements:
+
+| String    | Replacement                 |
+| --------- | --------------------------- |
+| `{icon}`  | icon, setted by delta shell |
+| `{usage}` | Current cpu usage (% view)  |
+
+## Ram
+
+_Subcategory `bar:modules:`_
+
+| Property | Description                                     | Type     | Default          |
+| -------- | ----------------------------------------------- | -------- | ---------------- |
+| `format` | The format, how information should be displayed | `string` | `{icon} {usage}` |
+
+### Format replacements:
+
+| String    | Replacement                   |
+| --------- | ----------------------------- |
+| `{icon}`  | icon, setted by delta shell   |
+| `{usage}` | Amount of used memory in GiB. |
+| `{total}` | Amount of total memory in GiB |
