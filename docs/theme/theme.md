@@ -110,3 +110,74 @@ _Subcategory `window:shadow:`_
 | `spread`  | shadow spread            | `integer`   | `0`      |
 | `color`   | color of shadow          | `string`    | `black`  |
 | `opacity` | shadow opacity (0 - 1.0) | `float`     | `1`      |
+
+## Bar
+
+_Category `bar:`_
+
+| Property  | Description                             | Type        | Default        |
+| --------- | --------------------------------------- | ----------- | -------------- |
+| `bg`      | background of bar                       | `string`    | `$bg0`         |
+| `opacity` | opacity of bar (0 - 1.0)                | `float`     | `1`            |
+| `margin`  | bar margin ([top, left, bottom, right]) | `integer[]` | `[0, 0, 0, 0]` |
+| `padding` | bar padding                             | `integer`   | `6`            |
+| `spacing` | spacing between the modules             | `integer`   | `6`            |
+
+### Border
+
+_Subcategory `bar:border:`_
+
+| Property | Description         | Type      | Default |
+| -------- | ------------------- | --------- | ------- |
+| `width`  | width of bar border | `integer` | `1`     |
+| `color`  | color of bar border | `string`  | `$bg2`  |
+
+### Separator
+
+_Subcategory `bar:separator:`_
+
+| Property | Description               | Type      | Default |
+| -------- | ------------------------- | --------- | ------- |
+| `width`  | width of separator module | `integer` | `1`     |
+| `color`  | color of separator module | `string`  | `$bg2`  |
+
+### Shadow
+
+_Subcategory `bar:shadow:`_
+
+| Property  | Description              | Type        | Default  |
+| --------- | ------------------------ | ----------- | -------- |
+| `offset`  | shadow offset (x, y)     | `integer[]` | `[0, 0]` |
+| `blur`    | shadow blur              | `integer`   | `10`     |
+| `spread`  | shadow spread            | `integer`   | `0`      |
+| `color`   | color of shadow          | `string`    | `black`  |
+| `opacity` | shadow opacity (0 - 1.0) | `float`     | `1`      |
+
+### Button
+
+_Subcategory `bar:button:`_
+
+| Property  | Description                                                                                             | Type                     | Default  |
+| --------- | ------------------------------------------------------------------------------------------------------- | ------------------------ | -------- |
+| `fg`      | font color of buttons in bar                                                                            | `string`                 | `$fg0`   |
+| `padding` | padding of button (single number, [top+bottom left+right], [top, left, bottom, right] just like in css) | `integer` or `integer[]` | `[0, 7]` |
+| `opacity` | button opacity (0 - 1.0)                                                                                | `float`                  | `1`      |
+
+#### Background
+
+_Subcategory `bar:button:bg:`_
+
+| Property  | Type     | Default |
+| --------- | -------- | ------- |
+| `default` | `string` | `$bg0`  |
+| `hover`   | `string` | `$bg1`  |
+| `active`  | `string` | `$bg2`  |
+
+#### Border
+
+_Subcategory `bar:button:border:`_
+
+| Property | Description                | Type      | Default |
+| -------- | -------------------------- | --------- | ------- |
+| `width`  | width of bar button border | `integer` | `1`     |
+| `color`  | color of bar button border | `string`  | `$bg2`  |
