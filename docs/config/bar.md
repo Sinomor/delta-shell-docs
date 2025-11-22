@@ -21,7 +21,7 @@ _Subcategory `bar:modules:`_
 | `center` | modules at center of the bar | `string[]` | `["clock"]`                                                |
 | `end`    | modules at end of the bar    | `string[]` | `["recordindicator", "tray", "keyboard", "quicksettings"]` |
 
-Available modules: `launcher`, `workspaces`, `clock`, `tray`, `keyboard`, `recordindicator`, `weather`, `notificationslist`, `volume`, `network`, `bluetooth`, `battery`, `quicksettings`, `clipboard`, `powermenu`, `separator`, `cpu`, `ram`
+Available modules: `launcher`, `workspaces`, `clock`, `tray`, `keyboard`, `recordindicator`, `weather`, `notificationslist`, `volume`, `network`, `bluetooth`, `battery`, `quicksettings`, `clipboard`, `powermenu`, `separator`, `cpu`, `ram`, `microphone`
 
 ## Launcher
 
@@ -170,6 +170,26 @@ _Subcategory `bar:modules:`_
 | `on-click-middle` | Command to execute when you middle clicked on the module using mousewheel | `string` |                 |
 | `on-scroll-up`    | Command to execute when scrolling up on the module                        | `string` | `volume-up`     |
 | `on-scroll-down`  | Command to execute when scrolling down on the module                      | `string` | `volume-down`   |
+
+### Format replacements:
+
+| String      | Replacement                 |
+| ----------- | --------------------------- |
+| `{icon}`    | icon, setted by delta shell |
+| `{percent}` | colume in percentage        |
+
+## Microphone
+
+_Subcategory `bar:modules:`_
+
+| Property          | Description                                                               | Type     | Default           |
+| ----------------- | ------------------------------------------------------------------------- | -------- | ----------------- |
+| `format`          | The format, how information should be displayed                           | `string` | `{icon}`          |
+| `on-click`        | Command to execute when clicked on the module                             | `string` | `toggle-volume`   |
+| `on-click-right`  | Command to execute when you right clicked on the module                   | `string` |                   |
+| `on-click-middle` | Command to execute when you middle clicked on the module using mousewheel | `string` |                   |
+| `on-scroll-up`    | Command to execute when scrolling up on the module                        | `string` | `microphone-up`   |
+| `on-scroll-down`  | Command to execute when scrolling down on the module                      | `string` | `microphone-down` |
 
 ### Format replacements:
 

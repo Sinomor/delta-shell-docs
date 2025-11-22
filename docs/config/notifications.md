@@ -5,7 +5,7 @@ _Category `notifications:`_
 | Property   | Description                                                                               | Type      | Default  |
 | ---------- | ----------------------------------------------------------------------------------------- | --------- | -------- |
 | `enabled`  | enable of notifications                                                                   | `boolean` | `true`   |
-| `position` | position of osd (`top`, `top_left`, `top_right`, `bottom`, `bottom_left`, `bottom_right`) | `string`  | `bottom` |
+| `position` | position of osd (`top`, `top-left`, `top-right`, `bottom`, `bottom-left`, `bottom-right`) | `string`  | `bottom` |
 | `timeout`  | time for displaying notification (in seconds)                                             | `integer` | `3`      |
 | `width`    | width of notification                                                                     | `integer` | `400`    |
 

@@ -8,5 +8,5 @@ _Category `osd:`_
 | `vertical` | orientation of osd                                                                                         | `boolean` | `false`  |
 | `width`    | width of osd window                                                                                        | `integer` | `300`    |
 | `height`   | height of osd window                                                                                       | `integer` | `56`     |
-| `position` | position of osd (`top`, `top_left`, `top_right`, `bottom`, `bottom_left`, `bottom_right`, `left`, `right`) | `string`  | `bottom` |
+| `position` | position of osd (`top`, `top-left`, `top-right`, `bottom`, `bottom-left`, `bottom-right`, `left`, `right`) | `string`  | `bottom` |
 | `timeout`  | time for displaying osd (in seconds)                                                                       | `integer` | `3`      |
