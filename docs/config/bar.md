@@ -211,11 +211,13 @@ _Subcategory `bar:modules:`_
 
 ### Format replacements:
 
-| String    | Replacement                 |
-| --------- | --------------------------- |
-| `{icon}`  | icon of the current weather |
-| `{temp}`  | current tempetarure         |
-| `{units}` | units of tempetarure        |
+| String         | Replacement                 |
+| -------------- | --------------------------- |
+| `{icon}`       | icon of the current weather |
+| `{temp}`       | current tempetarure         |
+| `{temp-units}` | units of tempetarure        |
+| `{wind-speed}` | current wind speed          |
+| `{wind-units}` | units of wind speed         |
 
 ## Record Indicator
 
