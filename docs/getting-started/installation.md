@@ -38,13 +38,14 @@ Delta Shell will not run without the required dependencies
 - `tuned-ppd` or `power-profiles-daemon` to switch between power profiles
 - `brightnessctl` for control screen brightness
 - `bluez` for connect to bluetooth devices
+- `libgtop` for cpu usage
 
 ### Arch Linux
 
 To install the dependencies on Arch, you can use the following command:
 
 ```bash
-yay -S libastal-niri-git aylurs-gtk-shell-git libastal-meta brightnessctl dart-sass bluez tuned-ppd cliphist gpu-screen-recorder wl-clipboard geoclue
+yay -S libastal-niri-git aylurs-gtk-shell-git libastal-meta brightnessctl dart-sass bluez tuned-ppd cliphist gpu-screen-recorder wl-clipboard geoclue libgtop
 ```
 
 ### Installing Delta Shell
@@ -65,12 +66,8 @@ To install Delta Shell without building, you can run the following commands:
 ```bash
 git clone https://github.com/Sinomor/delta-shell.git
 cd delta-shell
-./run-dev.sh
+./delta-shell run
 ```
-
-::: tip
-So for starting you need use `run-dev.sh` script
-:::
 
 ## Running Delta Shell
 
