@@ -9,12 +9,12 @@ export default defineConfig({
     outline: "deep",
     nav: [
       { text: "Home", link: "/" },
-      { text: "Getting Started", link: "/getting-started/installation" },
+      { text: "Get Started", link: "/getting-started/installation" },
     ],
 
     sidebar: [
       {
-        text: "Getting Started",
+        text: "Get Started",
         items: [
           { text: "Installation", link: "/getting-started/installation" },
         ],
@@ -45,5 +45,8 @@ export default defineConfig({
     socialLinks: [
       { icon: "github", link: "https://github.com/sinomor/delta-shell" },
     ],
+    search: {
+      provider: "local",
+    },
   },
 });

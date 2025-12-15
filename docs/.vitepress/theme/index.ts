@@ -1,4 +1,5 @@
 import DefaultTheme from "vitepress/theme";
+import "../theme.css";
 
 // (если ты добавляешь компоненты, например ColorBlock.vue)
 import ColorBlock from "./components/ColorBlock.vue";
