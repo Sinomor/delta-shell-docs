@@ -2,7 +2,7 @@ import { defineConfig } from "vitepress";
 
 export default defineConfig({
   title: "Delta Shell",
-  description: "A desktop shell based on Ags",
+  description: "Modern Wayland desktop shell built with AGS",
   base: "/delta-shell-docs/",
   lastUpdated: true,
   themeConfig: {
