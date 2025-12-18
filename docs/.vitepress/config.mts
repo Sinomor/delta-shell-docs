@@ -5,6 +5,7 @@ export default defineConfig({
   description: "Modern Wayland desktop shell built with AGS",
   base: "/delta-shell-docs/",
   lastUpdated: true,
+  ignoreDeadLinks: true,
   themeConfig: {
     outline: "deep",
     nav: [
