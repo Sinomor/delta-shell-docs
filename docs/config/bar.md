@@ -71,14 +71,16 @@ _Subcategory `bar:modules:`_
 
 ### Format replacements:
 
-| String                 | Replacement                         |
-| ---------------------- | ----------------------------------- |
-| `{icon}`               | icon, setted by delta shell         |
-| `{status}`             | Status of the bluetooth device      |
-| `{controller-address}` | Address of the displayed controller |
-| `{controller-alias}`   | Alias of the displayed controller   |
-| `{device-address}`     | Address of the displayed device     |
-| `{device-alias}`       | Alias of the displayed device       |
+| String                   | Replacement                         |
+| ------------------------ | ----------------------------------- |
+| `{icon}`                 | icon, setted by delta shell         |
+| `{status}`               | Status of the bluetooth device      |
+| `{controller-address}`\* | Address of the displayed controller |
+| `{controller-alias}`\*   | Alias of the displayed controller   |
+| `{device-address}`\*     | Address of the displayed device     |
+| `{device-alias}`\*       | Alias of the displayed device       |
+
+In marked keys you can set maximum size (read [faq: Can I set maximum size of the text?](http://localhost:5173/delta-shell-docs/help/faq.html#can-i-set-maximum-size-of-the-text-in-bar-modules))
 
 ## Clipboard
 
@@ -112,12 +114,36 @@ _Subcategory `bar:modules:`_
 
 _Subcategory `bar:modules:`_
 
-| Property         | Description                                          | Type                     | Default          |
-| ---------------- | ---------------------------------------------------- | ------------------------ | ---------------- |
-| `taskbar`        | Windows icons in workspaces                          | `boolean`                | `true`           |
-| `taskbar-icons`  | Custom icons for windows in taskbar                  | `Record<string, string>` |                  |
-| `on-scroll-up`   | Command to execute when scrolling up on the module   | `string`                 | `workspace-up`   |
-| `on-scroll-down` | Command to execute when scrolling down on the module | `string`                 | `workspace-down` |
+| Property           | Description                                                  | Type                     | Default              |
+| ------------------ | ------------------------------------------------------------ | ------------------------ | -------------------- |
+| `workspace-format` | The format of workspace, how information should be displayed | `string`                 | `{id}`               |
+| `window-format`    | The format of window, how information should be displayed    | `string`                 | `{indicator} {icon}` |
+| `taskbar-icons`    | Custom icons for windows in taskbar                          | `Record<string, string>` |                      |
+| `hide-empty`       | Hide empty workspaces (without windows)                      | `boolean`                | `false`              |
+| `on-scroll-up`     | Command to execute when scrolling up on the module           | `string`                 | `workspace-up`       |
+| `on-scroll-down`   | Command to execute when scrolling down on the module         | `string`                 | `workspace-down`     |
+
+### Format replacements:
+
+For workspace:
+
+| String      | Replacement                                                            |
+| ----------- | ---------------------------------------------------------------------- |
+| `{id}`      | Index of the workspace (start from 1)                                  |
+| `{name}`    | Name of the workspace for named workspaces                             |
+| `{count}`   | Count of windows on the workspace                                      |
+| `{windows}` | List of window on the workspace (can be formated with `window-format`) |
+
+For window:
+
+| String        | Replacement                                                                                                  |
+| ------------- | ------------------------------------------------------------------------------------------------------------ |
+| `{icon}`      | The icon of the application (you can set custom with `taskbar-icons` with class of the window and icon name) |
+| `{indicator}` | The indicator of the application                                                                             |
+| `{name}`\*    | The name of the application                                                                                  |
+| `{title}`\*   | The title of the application                                                                                 |
+
+In marked keys you can set maximum size (read [faq: Can I set maximum size of the text?](http://localhost:5173/delta-shell-docs/help/faq.html#can-i-set-maximum-size-of-the-text-in-bar-modules))
 
 ## Keyboard
 
@@ -153,10 +179,12 @@ _Subcategory `bar:modules:`_
 | String        | Replacement                              |
 | ------------- | ---------------------------------------- |
 | `{icon}`      | icon, setted by delta shell              |
-| `{ifname}`    | Name of the network interface            |
-| `{essid}`     | Name (SSID) of the wireless network      |
+| `{ifname}`\*  | Name of the network interface            |
+| `{essid}`\*   | Name (SSID) of the wireless network      |
 | `{strength}`  | Signal strength of the wireless network  |
 | `{frequency}` | Frequency of the wireless network in GHz |
+
+In marked keys you can set maximum size (read [faq: Can I set maximum size of the text?](http://localhost:5173/delta-shell-docs/help/faq.html#can-i-set-maximum-size-of-the-text-in-bar-modules))
 
 ## Volume
 

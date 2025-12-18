@@ -36,6 +36,10 @@ export default defineConfig({
         text: "Theming",
         items: [{ text: "Theme", link: "/theme/theme" }],
       },
+      {
+        text: "Help",
+        items: [{ text: "FAQ", link: "/help/faq" }],
+      },
     ],
 
     lastUpdated: {
