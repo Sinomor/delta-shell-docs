@@ -80,7 +80,7 @@ _Subcategory `bar:modules:`_
 | `{device-address}`\*     | Address of the displayed device     |
 | `{device-alias}`\*       | Alias of the displayed device       |
 
-In marked keys you can set maximum size (read [faq: Can I set maximum size of the text?](http://localhost:5173/delta-shell-docs/help/faq.html#can-i-set-maximum-size-of-the-text-in-bar-modules))
+In marked keys you can set maximum size (read [faq: Can I set maximum size of the text?](../help/faq/##can-i-set-maximum-size-of-the-text-in-bar-modules))
 
 ## Clipboard
 
@@ -143,7 +143,7 @@ For window:
 | `{name}`\*    | The name of the application                                                                                  |
 | `{title}`\*   | The title of the application                                                                                 |
 
-In marked keys you can set maximum size (read [faq: Can I set maximum size of the text?](http://localhost:5173/delta-shell-docs/help/faq.html#can-i-set-maximum-size-of-the-text-in-bar-modules))
+In marked keys you can set maximum size (read [faq: Can I set maximum size of the text?](../help/faq/##can-i-set-maximum-size-of-the-text-in-bar-modules))
 
 ## Keyboard
 
@@ -184,7 +184,7 @@ _Subcategory `bar:modules:`_
 | `{strength}`  | Signal strength of the wireless network  |
 | `{frequency}` | Frequency of the wireless network in GHz |
 
-In marked keys you can set maximum size (read [faq: Can I set maximum size of the text?](http://localhost:5173/delta-shell-docs/help/faq.html#can-i-set-maximum-size-of-the-text-in-bar-modules))
+In marked keys you can set maximum size (read [faq: Can I set maximum size of the text?](../help/faq/##can-i-set-maximum-size-of-the-text-in-bar-modules))
 
 ## Volume
 
