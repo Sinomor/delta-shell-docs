@@ -80,7 +80,7 @@ _Subcategory `bar:modules:`_
 | `{device-address}`\*     | Address of the displayed device     |
 | `{device-alias}`\*       | Alias of the displayed device       |
 
-In marked keys you can set maximum size (read [faq: Can I set maximum size of the text?](../help/faq/##can-i-set-maximum-size-of-the-text-in-bar-modules))
+In marked keys you can set maximum size (read [faq: Can I set maximum size of the text?](../help/faq))
 
 ## Clipboard
 
@@ -114,14 +114,14 @@ _Subcategory `bar:modules:`_
 
 _Subcategory `bar:modules:`_
 
-| Property           | Description                                                  | Type                     | Default              |
-| ------------------ | ------------------------------------------------------------ | ------------------------ | -------------------- |
-| `workspace-format` | The format of workspace, how information should be displayed | `string`                 | `{id}`               |
-| `window-format`    | The format of window, how information should be displayed    | `string`                 | `{indicator} {icon}` |
-| `taskbar-icons`    | Custom icons for windows in taskbar                          | `Record<string, string>` |                      |
-| `hide-empty`       | Hide empty workspaces (without windows)                      | `boolean`                | `false`              |
-| `on-scroll-up`     | Command to execute when scrolling up on the module           | `string`                 | `workspace-up`       |
-| `on-scroll-down`   | Command to execute when scrolling down on the module         | `string`                 | `workspace-down`     |
+| Property           | Description                                                                                                | Type                     | Default              |
+| ------------------ | ---------------------------------------------------------------------------------------------------------- | ------------------------ | -------------------- |
+| `workspace-format` | The format of workspace, how information should be displayed                                               | `string`                 | `{id}`               |
+| `window-format`    | The format of window, how information should be displayed                                                  | `string`                 | `{indicator} {icon}` |
+| `taskbar-icons`    | Custom icons for windows in taskbar (read more in [faq: How to change icons in the taskbar?](../help/faq)) | `Record<string, string>` |                      |
+| `hide-empty`       | Hide empty workspaces (without windows)                                                                    | `boolean`                | `false`              |
+| `on-scroll-up`     | Command to execute when scrolling up on the module                                                         | `string`                 | `workspace-up`       |
+| `on-scroll-down`   | Command to execute when scrolling down on the module                                                       | `string`                 | `workspace-down`     |
 
 ### Format replacements:
 
@@ -143,7 +143,7 @@ For window:
 | `{name}`\*    | The name of the application                                                                                  |
 | `{title}`\*   | The title of the application                                                                                 |
 
-In marked keys you can set maximum size (read [faq: Can I set maximum size of the text?](../help/faq/##can-i-set-maximum-size-of-the-text-in-bar-modules))
+In marked keys you can set maximum size (read [faq: Can I set maximum size of the text?](../help/faq))
 
 ## Keyboard
 
@@ -184,7 +184,7 @@ _Subcategory `bar:modules:`_
 | `{strength}`  | Signal strength of the wireless network  |
 | `{frequency}` | Frequency of the wireless network in GHz |
 
-In marked keys you can set maximum size (read [faq: Can I set maximum size of the text?](../help/faq/##can-i-set-maximum-size-of-the-text-in-bar-modules))
+In marked keys you can set maximum size (read [faq: Can I set maximum size of the text?](../help/faq))
 
 ## Volume
 
