@@ -26,6 +26,6 @@ features:
 
 ## Showcase
 
-![image](https://i.imgur.com/cgv5PYL.png)
+![image](./assets/1.png)
 <br>
-![image](https://i.imgur.com/ojZg97m.png)
+![image](./assets/2.png)
