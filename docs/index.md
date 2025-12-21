@@ -23,3 +23,9 @@ features:
   - title: Multi-monitor ready
     details: Automatically detects and configures widgets for each connected display with independent workspace management
 ---
+
+## Showcase
+
+![image](https://i.imgur.com/cgv5PYL.png)
+<br>
+![image](https://i.imgur.com/ojZg97m.png)
