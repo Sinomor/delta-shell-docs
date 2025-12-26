@@ -118,6 +118,7 @@ _Subcategory `bar:modules:`_
 | ------------------ | ---------------------------------------------------------------------------------------------------------- | ------------------------ | -------------------- |
 | `workspace-format` | The format of workspace, how information should be displayed                                               | `string`                 | `{id}`               |
 | `window-format`    | The format of window, how information should be displayed                                                  | `string`                 | `{indicator} {icon}` |
+| `window-icon-size` | window icon size                                                                                           | `integer`                | `20`                 |
 | `taskbar-icons`    | Custom icons for windows in taskbar (read more in [faq: How to change icons in the taskbar?](../help/faq)) | `Record<string, string>` |                      |
 | `hide-empty`       | Hide empty workspaces (without windows)                                                                    | `boolean`                | `false`              |
 | `on-scroll-up`     | Command to execute when scrolling up on the module                                                         | `string`                 | `workspace-up`       |

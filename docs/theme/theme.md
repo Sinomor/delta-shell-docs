@@ -2,11 +2,11 @@
 
 Theme file located at `~/.config/delta-shell/theme.json`, so for configuring the theme of shell you need edit this file
 
-| Property  | Description      | Type      | Default |
-| --------- | ---------------- | --------- | ------- |
-| `spacing` | font size        | `integer` | `10`    |
-| `shadow`  | enable of shadow | `boolean` | `true`  |
-| `radius`  | border radius    | `integer` | `0`     |
+| Property  | Description              | Type      | Default |
+| --------- | ------------------------ | --------- | ------- |
+| `spacing` | spacing between elements | `integer` | `10`    |
+| `shadow`  | enable of shadow         | `boolean` | `true`  |
+| `radius`  | border radius            | `integer` | `0`     |
 
 ## Font
 
@@ -16,6 +16,16 @@ _Category `font:`_
 | -------- | ----------- | --------- | ------- |
 | `size`   | font size   | `integer` | `14`    |
 | `name`   | font name   | `string`  | `Rubik` |
+
+## Icon Size
+
+_Category `icon-size:`_
+
+| Property | Description                                            | Type      | Default |
+| -------- | ------------------------------------------------------ | --------- | ------- |
+| `small`  | small icons size (notification close, etc)             | `integer` | `16`    |
+| `normal` | default icons size (just all icons)                    | `integer` | `20`    |
+| `large`  | large icons size (powermenu, weather module, launcher) | `integer` | `32`    |
 
 ## Colors
 
