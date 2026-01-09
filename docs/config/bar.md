@@ -150,12 +150,13 @@ In marked keys you can set maximum size (read [faq: Can I set maximum size of th
 
 _Subcategory `bar:modules:`_
 
-| Property          | Description                                                               | Type     | Default           |
-| ----------------- | ------------------------------------------------------------------------- | -------- | ----------------- |
-| `format`          | The format, how information should be displayed                           | `string` | `{lang}`          |
-| `on-click`        | Command to execute when clicked on the module                             | `string` | `switch-language` |
-| `on-click-right`  | Command to execute when you right clicked on the module                   | `string` |                   |
-| `on-click-middle` | Command to execute when you middle clicked on the module using mousewheel | `string` |                   |
+| Property          | Description                                                               | Type      | Default           |
+| ----------------- | ------------------------------------------------------------------------- | --------- | ----------------- |
+| `format`          | The format, how information should be displayed                           | `string`  | `{lang}`          |
+| `compact`         | Compact view of the keyboard layout name                                  | `boolean` | `true`            |
+| `on-click`        | Command to execute when clicked on the module                             | `string`  | `switch-language` |
+| `on-click-right`  | Command to execute when you right clicked on the module                   | `string`  |                   |
+| `on-click-middle` | Command to execute when you middle clicked on the module using mousewheel | `string`  |                   |
 
 ### Format replacements:
 
@@ -340,6 +341,12 @@ _Subcategory `bar:modules:`_
 | Property | Description                                     | Type     | Default          |
 | -------- | ----------------------------------------------- | -------- | ---------------- |
 | `format` | The format, how information should be displayed | `string` | `{icon} {usage}` |
+
+## Tray
+
+| Property  | Description                                  | Type      | Default |
+| --------- | -------------------------------------------- | --------- | ------- |
+| `compact` | Compact view of the tray (show arrow or not) | `boolean` | `true`  |
 
 ### Format replacements:
 

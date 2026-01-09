@@ -12,6 +12,9 @@ hero:
     - theme: alt
       text: View on Github
       link: https://github.com/Sinomor/delta-shell/
+    - theme: alt
+      text: Discord
+      link: https://discord.gg/MNpg7Z2b3a
 
 features:
   - title: Feature-rich modular widgets

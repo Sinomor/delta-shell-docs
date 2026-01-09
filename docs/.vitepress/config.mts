@@ -49,6 +49,7 @@ export default defineConfig({
 
     socialLinks: [
       { icon: "github", link: "https://github.com/sinomor/delta-shell" },
+      { icon: "discord", link: "https://discord.gg/zx4ssRgsS2" },
     ],
     search: {
       provider: "local",
