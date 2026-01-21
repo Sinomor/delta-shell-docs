@@ -36,7 +36,7 @@ Delta Shell will not run without the required dependencies
 - `gpu-screen-recorder` to record screen from control center
 - `geoclue` to autoload the location for weather
 - `tuned-ppd` or `power-profiles-daemon` to switch between power profiles
-- `brightnessctl` for control screen brightness
+- `brightnessctl` and `ddcutil` for control screen brightness
 - `bluez` for connect to bluetooth devices
 - `libgtop` for cpu usage
 
