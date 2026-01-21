@@ -45,7 +45,7 @@ Delta Shell will not run without the required dependencies
 To install the dependencies on Arch, you can use the following command:
 
 ```bash
-yay -S libastal-niri-git aylurs-gtk-shell-git libastal-meta brightnessctl dart-sass bluez tuned-ppd cliphist gpu-screen-recorder wl-clipboard geoclue libgtop
+yay -S delta-shell-git libastal-niri-git aylurs-gtk-shell-git libastal-meta brightnessctl ddcutil dart-sass fd bluez tuned-ppd cliphist gpu-screen-recorder wl-clipboard libgtop
 ```
 
 ### Installing Delta Shell
